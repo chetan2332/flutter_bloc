@@ -1,1 +1,1 @@
-# connectivity
+# connectivity using cubits
