@@ -1,7 +1,5 @@
-import 'package:connectivity/cubits/internet_cubit.dart';
-import 'package:connectivity/screens/home_screen.dart';
+import 'package:connectivity/screens/welcome/welcome_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,13 +12,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => InternetCubit(),
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: const HomeScreen(),
-        theme: ThemeData.dark(),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: const WelcomeScreen(),
+      theme: ThemeData.dark(),
     );
   }
 }
